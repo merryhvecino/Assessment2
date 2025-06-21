@@ -13,156 +13,252 @@ A comprehensive inventory and resource management system designed specifically f
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack Progress
 
-- **Frontend:** React.js with responsive design
-- **Backend:** FastAPI (Python)
-- **Database:** SQLite3
-- **Mobile:** Progressive Web App (PWA) support
-- **Scanning:** HTML5 Camera API with ZXing barcode library
-
----
-
-## ✨ Core Features
-
-### 🌐 1. Bilingual Language Support (Reo Rua)
-- **Language selection** at login: English / Te Reo Māori
-- **User preference saved** for future sessions
-- **Complete UI translation** - all text, buttons, messages
-- **Language toggle** available in dashboard settings
-- **Cultural authenticity** with proper Te Reo Māori translations
-
-### 🔐 2. User & Role Management (Ngā Kaiwhakamahi)
-- **Multi-level roles:** Admin, Manager, Kaimahi, Whānau
-- **Whānau/marae-based** user grouping
-- **Role-based access control** - granular permissions
-- **User status management** (Active/Inactive)
-- **Password reset** & comprehensive audit logs
-- **Cultural grouping** by rohe or iwi affiliation
-
-### 📦 3. Inventory Management (Ngā Rawa)
-- **Comprehensive item tracking** with categories:
-  - Tools, Technology, Furniture, Taonga, Kai, and more
-- **Multi-attribute tracking:**
-  - Quantity, location, condition, expiry dates
-- **Storage area assignment** (marae, offices, containers)
-- **Image upload** for visual identification
-- **Flexible tagging** system (loanable, grant-funded, etc.)
-- **Batch operations** for efficient management
-
-### 📆 4. Resource Booking System (Tāpae Rauemi)
-- **Event-based reservations** for hui, tangihanga, kaupapa
-- **Approval workflow** for booking requests
-- **Interactive calendar view** with conflict prevention
-- **Return tracking** with overdue notifications
-- **Kaupapa documentation** (purpose, whānau, outcomes)
-- **Resource availability** real-time checking
-
-### 🛠️ 5. Maintenance & Repairs (Whakatikatika Rawa)
-- **Issue reporting** system for damaged items
-- **Task assignment** to kaimahi or contractors
-- **Status tracking** (Under Repair, Repaired, Decommissioned)
-- **Cost tracking** and repair history
-- **Maintenance scheduling** and preventive care
-- **Full audit trail** for each repair
-
-### 🛒 6. Supplier & Procurement (Ngā Kaiwhakarato)
-- **Supplier database** with iwi/Māori business links
-- **Purchase order management**
-- **Delivery tracking** and invoice management
-- **Cost analysis** and budget tracking
-- **Export capabilities** for funding reports
-- **Supplier performance** monitoring
-
-### 📄 7. Reports & Analytics (Ngā Rīpoata)
-- **Inventory summaries** by category, location, status
-- **Usage analytics** and trending
-- **Booking reports** by event type or whānau
-- **Alert reports** (low stock, expiring items)
-- **Export formats:** PDF, CSV, Excel
-- **Custom report builder** for specific needs
-
-### 🛎️ 8. Alerts & Notifications (Ngā Panui)
-- **Real-time notifications** for:
-  - Booking confirmations
-  - Overdue returns
-  - Low stock alerts
-  - Maintenance required
-- **Dashboard alerts** for administrators
-- **Email notifications** (optional)
-- **Priority-based** alert system
-
-### 🧭 9. Location Tracking (Ngā Wāhi)
-- **Multi-site support** (marae, rohe, buildings)
-- **Item transfer** tracking between locations
-- **Location-based inventory** views
-- **Geographic organization** by region
-- **Future:** Map-based visualization
-
-### 📑 10. Audit Trail & Security (Pūrongo Hītori)
-- **Complete action logging** (add/edit/delete/booking)
-- **User activity tracking** with timestamps
-- **Admin-only log access** for security
-- **Data integrity** monitoring
-- **Change history** for all records
-
-### 🎯 11. Dashboard & Interface (Paemata Aroturuki)
-- **At-a-glance metrics:**
-  - Total inventory count
-  - Today's bookings
-  - Low-stock alerts
-  - Recent activities
-- **Quick action buttons** for common tasks
-- **Culturally-aligned design** with Māori motifs
-- **Customizable widgets** per user role
-
-### 🔏 12. Security & Backup (Haumarutanga)
-- **Encrypted authentication** with JWT tokens
-- **Role-based access control** (RBAC)
-- **Automated daily backups**
-- **Data recovery** capabilities
-- **HTTPS enforcement** for secure connections
-- **Session management** and timeout controls
-
-### 💻 13. Mobile-Responsive Design (Āheitanga ki te Pūkoro)
-- **Touch-optimized interface** for tablets and phones
-- **Progressive Web App** (PWA) capabilities
-- **Offline functionality** for remote locations
-- **Camera integration** for barcode scanning
-- **Swipe gestures** and mobile-first design
-
-### 🌱 14. Cultural Integration (Taha Tikanga)
-- **Te Reo Māori** throughout the interface
-- **Cultural color themes** inspired by tukutuku and harakeke
-- **Whakataukī** on dashboard screens
-- **Optional karakia** prompts
-- **Whakapapa-aware** user and resource linking
-- **Tikanga-respectful** workflow design
+- [ ] **Frontend:** React.js with responsive design
+- [x] **Backend:** FastAPI (Python) 
+- [x] **Database:** SQLite3
+- [ ] **Mobile:** Progressive Web App (PWA) support
+- [ ] **Integration:** Frontend-Backend API connection
+- [ ] **Scanning:** HTML5 Camera API with ZXing barcode library
 
 ---
 
-## 📷 Mobile Camera Barcode Scanning
+## 🔧 Backend Development Progress (FastAPI/Python)
 
-### 🔍 Smart Scanning Capabilities
-- **Multi-format support:** QR codes, EAN, UPC, Code 128, Code 39
-- **Instant item lookup** from barcode scan
-- **Quick actions:** Check In/Out, Edit, Report Damage
-- **Real-time feedback** with audio/visual confirmation
-- **Works on any device** with camera (no app installation required)
+### 🗄️ Database & Models
+- [x] **SQLite Database** setup and configuration
+- [x] **User Model** (Admin, Manager, Kaimahi, Whānau roles)
+- [x] **Inventory Model** with categories and attributes
+- [x] **Booking Model** for resource reservations
+- [x] **Maintenance Model** for repair tracking
+- [x] **Supplier Model** for procurement
+- [x] **Audit Log Model** for activity tracking
+- [x] **Location Model** for multi-site support
 
-### 📱 Mobile Workflow
-1. Open system on mobile device
-2. Tap barcode scan button
-3. Point camera at barcode/QR code
-4. System automatically finds item
-5. Choose action (Check Out/In/Edit/Report)
-6. Confirm and log activity
+### 🔐 Authentication & Security (Backend)
+- [x] **JWT Token** authentication system
+- [x] **Password hashing** with bcrypt
+- [x] **Role-based permissions** middleware
+- [x] **Session management** and token expiration
+- [x] **User registration** API endpoint
+- [x] **Password reset** functionality
+- [x] **User status management** (Active/Inactive)
 
-### 🎯 Use Cases
-- **Event setup:** Quick equipment check-out at marae
-- **Inventory audits:** Fast stock counting with mobile teams
-- **Returns processing:** Streamlined check-in with condition notes
-- **Remote locations:** Offline scanning with sync capabilities
+### 📡 API Endpoints Development
+- [x] **Auth Routes** (`/api/auth/`)
+  - [x] POST `/login` - User authentication
+  - [x] POST `/register` - User registration
+  - [x] POST `/logout` - User logout
+  - [x] POST `/reset-password` - Password reset
+- [x] **User Management Routes** (`/api/users/`)
+  - [x] GET `/users` - List users
+  - [x] POST `/users` - Create user
+  - [x] PUT `/users/{id}` - Update user
+  - [x] DELETE `/users/{id}` - Delete user
+- [x] **Inventory Routes** (`/api/inventory/`)
+  - [x] GET `/inventory` - List items
+  - [x] POST `/inventory` - Create item
+  - [x] GET `/inventory/{id}` - Get item details
+  - [x] PUT `/inventory/{id}` - Update item
+  - [x] DELETE `/inventory/{id}` - Delete item
+  - [x] GET `/inventory/categories` - List categories
+- [x] **Booking Routes** (`/api/bookings/`)
+  - [x] GET `/bookings` - List bookings
+  - [x] POST `/bookings` - Create booking
+  - [x] PUT `/bookings/{id}` - Update booking
+  - [x] DELETE `/bookings/{id}` - Cancel booking
+  - [x] GET `/bookings/calendar` - Calendar view data
+- [x] **Maintenance Routes** (`/api/maintenance/`)
+  - [x] GET `/maintenance` - List maintenance tasks
+  - [x] POST `/maintenance` - Report issue
+  - [x] PUT `/maintenance/{id}` - Update task
+  - [x] GET `/maintenance/history/{item_id}` - Item history
+- [x] **Reports Routes** (`/api/reports/`)
+  - [x] GET `/reports/inventory` - Inventory reports
+  - [x] GET `/reports/usage` - Usage analytics
+  - [x] GET `/reports/bookings` - Booking reports
+  - [x] GET `/reports/export` - Export data
+
+### 🔄 Business Logic & Services
+- [x] **Inventory Service** - Item management logic
+- [x] **Booking Service** - Reservation and availability logic
+- [x] **User Service** - User management and permissions
+- [x] **Notification Service** - Alert and notification logic
+- [x] **Report Service** - Data analysis and export
+- [x] **Maintenance Service** - Repair workflow logic
+- [x] **Audit Service** - Activity logging
+- [x] **File Upload Service** - Image and document handling
+
+### 📊 Database Operations
+- [x] **CRUD Operations** for all models
+- [x] **Complex Queries** for reports and analytics
+- [x] **Data Validation** with Pydantic models
+- [x] **Database Migrations** system
+- [x] **Backup and Recovery** procedures
+- [x] **Performance Optimization** queries
+- [x] **Data Export** functionality (CSV, PDF)
+
+### 🛡️ Security & Performance (Backend)
+- [x] **Input Validation** and sanitization
+- [x] **SQL Injection Prevention**
+- [x] **Rate Limiting** for API endpoints
+- [x] **CORS Configuration** for frontend
+- [x] **Error Handling** and logging
+- [x] **API Documentation** with Swagger/OpenAPI
+- [x] **Performance Monitoring**
+
+---
+
+## 🎨 Frontend Development Progress (React.js)
+
+### 🏗️ Project Setup & Structure
+- [ ] **React App** initialization and configuration
+- [ ] **Component Structure** organization
+- [ ] **Routing Setup** with React Router
+- [ ] **State Management** (Context API or Redux)
+- [ ] **API Client** setup (Axios/Fetch)
+- [ ] **Environment Configuration**
+- [ ] **Build Process** optimization
+
+### 🌐 Language Support (Frontend)
+- [ ] **Language Context** for English/Te Reo Māori
+- [ ] **Translation Files** (i18n setup)
+- [ ] **Language Toggle** component
+- [ ] **User Language Preference** storage
+- [ ] **Dynamic Text Rendering** based on language
+- [ ] **Cultural-appropriate** font and styling
+
+### 🔐 Authentication UI
+- [ ] **Login Page** with bilingual support
+- [ ] **Registration Form** with validation
+- [ ] **Password Reset** interface
+- [ ] **User Profile** management page
+- [ ] **Session Handling** and auto-logout
+- [ ] **Protected Routes** based on user roles
+
+### 📱 Core User Interface Components
+- [ ] **Dashboard** with metrics and quick actions
+- [ ] **Navigation Menu** with role-based visibility
+- [ ] **Inventory Management** interface
+  - [ ] Item list/grid view
+  - [ ] Add/Edit item forms
+  - [ ] Item detail pages
+  - [ ] Category management
+  - [ ] Image upload component
+- [ ] **Booking System** interface
+  - [ ] Calendar view component
+  - [ ] Booking form with validation
+  - [ ] Booking management page
+  - [ ] Return tracking interface
+- [ ] **User Management** interface (Admin only)
+  - [ ] User list and search
+  - [ ] Add/Edit user forms
+  - [ ] Role assignment interface
+
+### 📊 Reports & Analytics UI
+- [ ] **Report Dashboard** with charts
+- [ ] **Inventory Reports** with filters
+- [ ] **Usage Analytics** visualization
+- [ ] **Booking Reports** with calendar integration
+- [ ] **Export Functionality** (PDF, CSV)
+- [ ] **Custom Report Builder** interface
+
+### 🛠️ Maintenance & Operations UI
+- [ ] **Maintenance Request** form
+- [ ] **Task Assignment** interface
+- [ ] **Repair History** display
+- [ ] **Status Tracking** components
+- [ ] **Cost Tracking** input forms
+
+### 🔔 Notifications & Alerts UI
+- [ ] **Notification Center** component
+- [ ] **Alert Banners** for important messages
+- [ ] **Real-time Updates** with WebSocket
+- [ ] **Email Notification** preferences
+- [ ] **Dashboard Alerts** widget
+
+### 💻 Mobile & Responsive Design
+- [ ] **Responsive Layout** for all screen sizes
+- [ ] **Touch-friendly** interface elements
+- [ ] **Mobile Navigation** (drawer/hamburger menu)
+- [ ] **Progressive Web App** (PWA) setup
+- [ ] **Offline Functionality** basic support
+- [ ] **Mobile-specific** components
+
+### 📷 Barcode Scanning (Frontend)
+- [ ] **Camera Access** component
+- [ ] **Barcode Scanner** integration (ZXing)
+- [ ] **QR Code Support** and recognition
+- [ ] **Scan Result** processing and display
+- [ ] **Mobile Optimization** for scanning
+- [ ] **Scan History** and logging
+
+### 🎨 Cultural Design & Theming
+- [ ] **Māori-inspired** color themes
+- [ ] **Cultural Icons** and imagery
+- [ ] **Whakataukī Display** component
+- [ ] **Responsive Cultural** elements
+- [ ] **Accessibility** features
+- [ ] **Print-friendly** styling
+
+---
+
+## 🤝 Integration & Collaboration Tasks
+
+### 🔗 Frontend-Backend Integration
+- [ ] **API Client** configuration and setup
+- [ ] **Authentication Flow** integration
+- [ ] **Data Fetching** and state management
+- [ ] **Error Handling** for API calls
+- [ ] **Loading States** and user feedback
+- [ ] **File Upload** integration
+- [ ] **Real-time Updates** synchronization
+
+### 🧪 Testing & Quality Assurance
+- [ ] **Backend API Testing** (unit tests)
+- [ ] **Frontend Component Testing**
+- [ ] **Integration Testing** between frontend and backend
+- [ ] **End-to-End Testing** user workflows
+- [ ] **Cross-browser Testing**
+- [ ] **Mobile Device Testing**
+- [ ] **Performance Testing**
+
+### 🚀 Deployment & DevOps
+- [ ] **Development Environment** setup
+- [ ] **Production Build** configuration
+- [ ] **Database Migration** scripts
+- [ ] **Backup Procedures** implementation
+- [ ] **Monitoring Setup** for both frontend and backend
+- [ ] **Error Tracking** integration
+- [ ] **Deployment Documentation**
+
+---
+
+## 🔮 Future Enhancements Roadmap
+
+### ✨ Backend Enhancements
+- [ ] **API Rate Limiting** advanced implementation
+- [ ] **Caching Layer** (Redis integration)
+- [ ] **Background Tasks** (Celery/similar)
+- [ ] **Advanced Analytics** with ML
+- [ ] **Third-party Integrations** (Xero, etc.)
+- [ ] **Microservices** architecture consideration
+
+### ✨ Frontend Enhancements
+- [ ] **Advanced Charts** and data visualization
+- [ ] **Drag-and-Drop** interface improvements
+- [ ] **Advanced Search** with filters
+- [ ] **Bulk Operations** UI
+- [ ] **Keyboard Shortcuts** implementation
+- [ ] **Advanced PWA** features (push notifications)
+
+### 🌍 Collaboration Milestones
+- [ ] **MVP Demo** - Basic functionality working
+- [ ] **Beta Testing** with first marae
+- [ ] **Community Feedback** integration
+- [ ] **National Rollout** preparation
+- [ ] **International Expansion** planning
 
 ---
 
@@ -173,8 +269,7 @@ A comprehensive inventory and resource management system designed specifically f
 - Node.js 16+
 - Git
 
-### Installation
-
+### Backend Developer Setup
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/kaiwhakarite-rawa.git
@@ -183,12 +278,19 @@ cd kaiwhakarite-rawa
 # Backend setup
 pip install -r requirements.txt
 python scripts/setup_demo_users.py
-
-# Frontend setup (if applicable)
-cd client && npm install && cd ..
-
-# Start the system
 python scripts/run_server.py
+```
+
+### Frontend Developer Setup
+```bash
+# Clone the repository (if not already done)
+git clone https://github.com/yourusername/kaiwhakarite-rawa.git
+cd kaiwhakarite-rawa
+
+# Frontend setup
+cd client
+npm install
+npm start
 ```
 
 ### Demo Access
@@ -207,21 +309,6 @@ Kaiwhakarite Rawa is built with deep respect for tikanga Māori and designed to 
 - **Community-centric** workflows that respect whānau structures
 - **Sustainable resource management** aligned with kaitiakitanga
 - **Inclusive design** welcoming to all skill levels and ages
-
----
-
-## 🔮 Future Enhancements
-
-### ✨ Planned Features
-- **Offline synchronization** for remote marae
-- **API integrations** (Xero, other accounting systems)
-- **Volunteer contribution** tracking
-- **Asset depreciation** calculations
-- **Advanced analytics** with ML insights
-- **Multi-language expansion** (other indigenous languages)
-
-### 🌍 Vision
-To become the leading resource management platform for indigenous communities worldwide, preserving cultural values while embracing modern technology.
 
 ---
 
