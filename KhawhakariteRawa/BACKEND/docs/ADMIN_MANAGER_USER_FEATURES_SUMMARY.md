@@ -150,12 +150,12 @@ The Kaiwhakarite Rawa system now includes comprehensive functionality for all th
 ### Data Management
 - **Mock Data Integration**: Comprehensive demo data for all features
 - **API Ready**: Structured for easy backend integration
-- **State Management**: Efficient React state handling
+- **State Management**: Efficient backend state handling
 - **Error Handling**: Graceful error management and user feedback
 
 ### Performance Optimization
 - **Lazy Loading**: Components load only when needed
-- **Efficient Filtering**: Client-side filtering for responsive UX
+- **Efficient Filtering**: Backend API filtering for optimal performance
 - **Caching Strategy**: Smart data caching and updates
 - **Responsive UI**: Fast, fluid user interactions
 
@@ -172,7 +172,7 @@ The Kaiwhakarite Rawa system now includes comprehensive functionality for all th
 
 ### Launch Scripts
 - **Automated Startup**: PowerShell and batch scripts for easy launching
-- **Both Servers**: Starts both backend (port 8000) and frontend (port 3000)
+- **Backend Server**: Starts backend server (port 8000)
 - **Error Handling**: Graceful handling of startup issues
 - **User Guidance**: Clear instructions and status updates
 
@@ -208,7 +208,7 @@ The Kaiwhakarite Rawa system now includes comprehensive functionality for all th
 - **Scalable System**: Ready for community growth
 
 ### Technical Excellence
-- **Modern Stack**: React, Tailwind CSS, modern JavaScript
+- **Modern Stack**: FastAPI, SQLite, modern Python
 - **Best Practices**: Clean code, proper error handling, security
 - **Documentation**: Comprehensive guides and setup instructions
 - **Maintainable**: Well-structured, commented, and organized code

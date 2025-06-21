@@ -90,7 +90,7 @@ def create_demo_users():
     print("👤 User:    whanau@kaiwhakarite.co.nz  / demo123")
     print("\n🌐 Access the system at:")
     print("📡 Backend API: http://127.0.0.1:8000/docs")
-    print("🎨 Frontend:    http://localhost:3000 (after npm start)")
+    print("🎨 API Docs:    http://localhost:8000/docs")
 
 def create_demo_inventory():
     """Create some demo inventory items"""
