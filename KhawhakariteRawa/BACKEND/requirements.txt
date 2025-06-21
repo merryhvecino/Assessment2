@@ -1,0 +1,50 @@
+# Kaiwhakarite Rawa - Python Dependencies
+# Optimized for SQLite3 production use
+
+# Core FastAPI Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Authentication & Security
+python-jose[cryptography]==3.5.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+
+# HTTP & File Handling
+python-multipart==0.0.6
+aiofiles==23.2.1
+
+# Configuration & Environment
+python-decouple==3.8
+
+# Email & Validation
+email-validator==2.1.0
+
+# Template Engine
+jinja2==3.1.2
+
+# Image Processing
+Pillow==10.1.0
+
+# Date/Time Utilities
+python-dateutil==2.8.2
+
+# QR Code Generation
+qrcode[pil]==7.4.2
+
+# PDF Generation & Reports
+reportlab==4.0.7
+
+# Data Processing
+pandas==2.1.4
+openpyxl==3.1.2
+
+# Database Support
+# SQLite3 is built into Python - no additional dependencies needed!
+
+# Development Dependencies (comment out for production)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# black==23.11.0
+# flake8==6.1.0 

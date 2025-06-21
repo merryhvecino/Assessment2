@@ -1,0 +1,13 @@
+{
+  "name": "kaiwhakarite-rawa-backend",
+  "version": "1.0.0",
+  "description": "Inventory and Resource Management System - Kaiwhakarite Rawa (Backend Only)",
+  "scripts": {
+    "server": "python scripts/run_server.py",
+    "start": "python scripts/run_server.py",
+    "dev": "python scripts/run_server.py"
+  },
+  "keywords": ["inventory", "management", "maori", "bilingual", "resources", "backend", "api"],
+  "author": "Kaiwhakarite Rawa Team",
+  "license": "MIT"
+} 
