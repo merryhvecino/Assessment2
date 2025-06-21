@@ -1,299 +1,252 @@
-# 🏢 Kaiwhakarite Rawa - Backend API
+# 🌿 Kaiwhakarite Rawa
 
-**Inventory & Resource Management System - Backend API**  
-*Taputapu Whakahaere Rauemi - API*
+**Bilingual Inventory & Resource Management System**  
+*He Taputapu Whakahaere Rauemi Reo Rua*
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
+[![SQLite](https://img.shields.io/badge/SQLite-3+-lightgrey.svg)](https://sqlite.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A comprehensive REST API for inventory and resource management system designed for Māori organizations, featuring bilingual support (English/Māori), role-based authentication, and modern backend technologies.
+A comprehensive inventory and resource management system designed specifically for Māori organizations, marae, and iwi groups. Built with cultural values at its core, featuring full bilingual support (English/Te Reo Māori) and designed to respect tikanga Māori.
 
 ---
 
-## ✨ Features
+## 🛠️ Tech Stack
 
-### 🎯 Core API Functionality
-- **📦 Inventory Management API** - REST endpoints for resource tracking with barcode support
-- **📅 Booking System API** - Reserve items and resources via API calls
-- **👥 User Management API** - Role-based access control (Admin, Manager, Staff)
-- **📊 Reports & Analytics API** - Data retrieval endpoints for reporting
-- **🔧 Maintenance Tracking API** - Schedule and track maintenance activities
-- **🌐 Mobile-Ready API** - RESTful design optimized for mobile app integration
+- **Frontend:** React.js with responsive design
+- **Backend:** FastAPI (Python)
+- **Database:** SQLite3
+- **Mobile:** Progressive Web App (PWA) support
+- **Scanning:** HTML5 Camera API with ZXing barcode library
 
-### 🏛️ Cultural Features
-- **🗣️ Bilingual Data Support** - English and Te Reo Māori data fields
-- **🏘️ Whānau Groups API** - Organize users by cultural groups
-- **📍 Marae Integration API** - Location-based resource management endpoints
+---
 
-### 🛡️ Security & Performance
-- **🔐 JWT Authentication** - Secure token-based API authentication
-- **🏷️ Role-Based Access** - Granular permission system for API endpoints
-- **🔍 Real-time Search API** - Fast search endpoints with filtering
-- **📈 Performance Optimized** - Fast API responses and database queries
+## ✨ Core Features
+
+### 🌐 1. Bilingual Language Support (Reo Rua)
+- **Language selection** at login: English / Te Reo Māori
+- **User preference saved** for future sessions
+- **Complete UI translation** - all text, buttons, messages
+- **Language toggle** available in dashboard settings
+- **Cultural authenticity** with proper Te Reo Māori translations
+
+### 🔐 2. User & Role Management (Ngā Kaiwhakamahi)
+- **Multi-level roles:** Admin, Manager, Kaimahi, Whānau
+- **Whānau/marae-based** user grouping
+- **Role-based access control** - granular permissions
+- **User status management** (Active/Inactive)
+- **Password reset** & comprehensive audit logs
+- **Cultural grouping** by rohe or iwi affiliation
+
+### 📦 3. Inventory Management (Ngā Rawa)
+- **Comprehensive item tracking** with categories:
+  - Tools, Technology, Furniture, Taonga, Kai, and more
+- **Multi-attribute tracking:**
+  - Quantity, location, condition, expiry dates
+- **Storage area assignment** (marae, offices, containers)
+- **Image upload** for visual identification
+- **Flexible tagging** system (loanable, grant-funded, etc.)
+- **Batch operations** for efficient management
+
+### 📆 4. Resource Booking System (Tāpae Rauemi)
+- **Event-based reservations** for hui, tangihanga, kaupapa
+- **Approval workflow** for booking requests
+- **Interactive calendar view** with conflict prevention
+- **Return tracking** with overdue notifications
+- **Kaupapa documentation** (purpose, whānau, outcomes)
+- **Resource availability** real-time checking
+
+### 🛠️ 5. Maintenance & Repairs (Whakatikatika Rawa)
+- **Issue reporting** system for damaged items
+- **Task assignment** to kaimahi or contractors
+- **Status tracking** (Under Repair, Repaired, Decommissioned)
+- **Cost tracking** and repair history
+- **Maintenance scheduling** and preventive care
+- **Full audit trail** for each repair
+
+### 🛒 6. Supplier & Procurement (Ngā Kaiwhakarato)
+- **Supplier database** with iwi/Māori business links
+- **Purchase order management**
+- **Delivery tracking** and invoice management
+- **Cost analysis** and budget tracking
+- **Export capabilities** for funding reports
+- **Supplier performance** monitoring
+
+### 📄 7. Reports & Analytics (Ngā Rīpoata)
+- **Inventory summaries** by category, location, status
+- **Usage analytics** and trending
+- **Booking reports** by event type or whānau
+- **Alert reports** (low stock, expiring items)
+- **Export formats:** PDF, CSV, Excel
+- **Custom report builder** for specific needs
+
+### 🛎️ 8. Alerts & Notifications (Ngā Panui)
+- **Real-time notifications** for:
+  - Booking confirmations
+  - Overdue returns
+  - Low stock alerts
+  - Maintenance required
+- **Dashboard alerts** for administrators
+- **Email notifications** (optional)
+- **Priority-based** alert system
+
+### 🧭 9. Location Tracking (Ngā Wāhi)
+- **Multi-site support** (marae, rohe, buildings)
+- **Item transfer** tracking between locations
+- **Location-based inventory** views
+- **Geographic organization** by region
+- **Future:** Map-based visualization
+
+### 📑 10. Audit Trail & Security (Pūrongo Hītori)
+- **Complete action logging** (add/edit/delete/booking)
+- **User activity tracking** with timestamps
+- **Admin-only log access** for security
+- **Data integrity** monitoring
+- **Change history** for all records
+
+### 🎯 11. Dashboard & Interface (Paemata Aroturuki)
+- **At-a-glance metrics:**
+  - Total inventory count
+  - Today's bookings
+  - Low-stock alerts
+  - Recent activities
+- **Quick action buttons** for common tasks
+- **Culturally-aligned design** with Māori motifs
+- **Customizable widgets** per user role
+
+### 🔏 12. Security & Backup (Haumarutanga)
+- **Encrypted authentication** with JWT tokens
+- **Role-based access control** (RBAC)
+- **Automated daily backups**
+- **Data recovery** capabilities
+- **HTTPS enforcement** for secure connections
+- **Session management** and timeout controls
+
+### 💻 13. Mobile-Responsive Design (Āheitanga ki te Pūkoro)
+- **Touch-optimized interface** for tablets and phones
+- **Progressive Web App** (PWA) capabilities
+- **Offline functionality** for remote locations
+- **Camera integration** for barcode scanning
+- **Swipe gestures** and mobile-first design
+
+### 🌱 14. Cultural Integration (Taha Tikanga)
+- **Te Reo Māori** throughout the interface
+- **Cultural color themes** inspired by tukutuku and harakeke
+- **Whakataukī** on dashboard screens
+- **Optional karakia** prompts
+- **Whakapapa-aware** user and resource linking
+- **Tikanga-respectful** workflow design
+
+---
+
+## 📷 Mobile Camera Barcode Scanning
+
+### 🔍 Smart Scanning Capabilities
+- **Multi-format support:** QR codes, EAN, UPC, Code 128, Code 39
+- **Instant item lookup** from barcode scan
+- **Quick actions:** Check In/Out, Edit, Report Damage
+- **Real-time feedback** with audio/visual confirmation
+- **Works on any device** with camera (no app installation required)
+
+### 📱 Mobile Workflow
+1. Open system on mobile device
+2. Tap barcode scan button
+3. Point camera at barcode/QR code
+4. System automatically finds item
+5. Choose action (Check Out/In/Edit/Report)
+6. Confirm and log activity
+
+### 🎯 Use Cases
+- **Event setup:** Quick equipment check-out at marae
+- **Inventory audits:** Fast stock counting with mobile teams
+- **Returns processing:** Streamlined check-in with condition notes
+- **Remote locations:** Offline scanning with sync capabilities
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+- Python 3.8+
+- Node.js 16+
+- Git
 
-- **Python 3.8+** ([Download](https://python.org/downloads/))
-- **Git** ([Download](https://git-scm.com/))
+### Installation
 
-### 🎯 One-Click Setup
-
-**Windows:**
 ```bash
-# Clone and enter directory
-git clone <your-repo-url>
-cd BACKEND_KawhakariteRawa
+# Clone the repository
+git clone https://github.com/yourusername/kaiwhakarite-rawa.git
+cd kaiwhakarite-rawa
 
-# Run the automated setup
-launch.bat
-```
-
-**Cross-Platform:**
-```bash
-# Clone and enter directory
-git clone <your-repo-url>
-cd BACKEND_KawhakariteRawa
-
-# Install dependencies
+# Backend setup
 pip install -r requirements.txt
+python scripts/setup_demo_users.py
 
-# Start the API server
+# Frontend setup (if applicable)
+cd client && npm install && cd ..
+
+# Start the system
 python scripts/run_server.py
 ```
 
-### 🌐 API Access Points
-
-Once started, access the API at:
-
-- **📡 API Server:** http://localhost:8000
-- **📚 API Documentation:** http://localhost:8000/docs
-- **📚 ReDoc Documentation:** http://localhost:8000/redoc
-- **❤️ Health Check:** http://localhost:8000/health
+### Demo Access
+- **Admin:** admin@kaiwhakarite.co.nz / admin123
+- **Manager:** kaimahi@kaiwhakarite.co.nz / kaimahi123
+- **Staff:** whanau@kaiwhakarite.co.nz / whanau123
 
 ---
 
-## 🏗️ Architecture
+## 🎨 Cultural Design Philosophy
 
-```mermaid
-graph TB
-    subgraph "API Layer (FastAPI)"
-        E[FastAPI :8000]
-        F[Routes]
-        G[Services]
-        H[Models]
-    end
-    
-    subgraph "Data Layer"
-        I[SQLite Database]
-        J[File Storage]
-    end
-    
-    subgraph "External Clients"
-        K[Mobile Apps]
-        L[Web Apps]
-        M[Third-party Services]
-    end
-    
-    K --> E
-    L --> E
-    M --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    E --> J
-```
+Kaiwhakarite Rawa is built with deep respect for tikanga Māori and designed to serve Māori communities authentically:
+
+- **Whakatōhea values** integrated into user experience
+- **Bilingual by design** - not just translation, but cultural adaptation
+- **Community-centric** workflows that respect whānau structures
+- **Sustainable resource management** aligned with kaitiakitanga
+- **Inclusive design** welcoming to all skill levels and ages
 
 ---
 
-## 🔐 Demo Credentials
+## 🔮 Future Enhancements
 
-| Role | Email | Password | API Access Level |
-|------|-------|----------|------------------|
-| **👑 Admin** | admin@kaiwhakarite.co.nz | admin123 | Full API access |
-| **👨‍💼 Manager** | kaimahi@kaiwhakarite.co.nz | kaimahi123 | Management endpoints |
-| **👤 Staff** | whanau@kaiwhakarite.co.nz | whanau123 | Basic operations |
+### ✨ Planned Features
+- **Offline synchronization** for remote marae
+- **API integrations** (Xero, other accounting systems)
+- **Volunteer contribution** tracking
+- **Asset depreciation** calculations
+- **Advanced analytics** with ML insights
+- **Multi-language expansion** (other indigenous languages)
 
----
-
-## 📁 Project Structure
-
-```
-BACKEND_KawhakariteRawa/
-├── 📁 server/                   # FastAPI Backend
-│   ├── 📁 routes/               # API endpoints
-│   ├── 📁 services/             # Business logic
-│   ├── main.py                  # FastAPI app
-│   ├── config.py                # Configuration
-│   ├── database.py              # Database operations
-│   └── models.py                # Data models
-│
-├── 📁 scripts/                  # Utility scripts
-│   ├── run_server.py            # Server startup
-│   ├── setup_demo_users.py      # Demo data
-│   └── launch_website.ps1       # PowerShell launcher
-│
-├── 📁 docs/                     # Documentation
-├── 📁 database/                 # Database files
-├── 📁 uploads/                  # File uploads
-├── requirements.txt             # Python dependencies
-├── launch.bat                   # Windows launcher
-├── launch.ps1                   # PowerShell launcher
-└── README.md                    # This file
-```
-
----
-
-## 🛠️ API Development
-
-### Starting the Server
-
-```bash
-# Method 1: Direct Python
-python scripts/run_server.py
-
-# Method 2: Using launchers
-./launch.bat        # Windows
-./launch.ps1        # PowerShell
-
-# Method 3: Using npm scripts
-npm run server
-npm start
-```
-
-### Installing Dependencies
-
-```bash
-# Install new Python packages
-pip install package_name
-pip freeze > requirements.txt
-
-# Database operations
-python scripts/reset_and_enhance_database.py
-python scripts/setup_demo_users.py
-```
-
-### 📱 API Testing
-
-```bash
-# Health check
-curl http://localhost:8000/health
-
-# Get API documentation
-curl http://localhost:8000/docs
-
-# Authentication example
-curl -X POST http://localhost:8000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"admin@kaiwhakarite.co.nz","password":"admin123"}'
-```
-
----
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**❌ Server won't start:**
-```bash
-# Check if ports are in use
-netstat -an | find "8000"
-netstat -an | find "3000"
-
-# Kill existing processes
-taskkill /f /im python.exe
-taskkill /f /im node.exe
-```
-
-**❌ Database errors:**
-```bash
-# Reset database
-python scripts/reset_and_enhance_database.py
-
-# Create demo users
-python scripts/setup_demo_users.py
-```
-
-**❌ Mobile access issues:**
-- Check Windows Firewall settings
-- Verify same WiFi network
-- Try different browser on mobile
-- Check IP address is correct
-
-### Getting Help
-
-1. **Check logs** in terminal/console output
-2. **Run system check** with `python tests/quick_system_check.py`
-3. **Review configuration** in `server/config.py`
-4. **Check documentation** in `docs/` folder
-
----
-
-## 🚀 Deployment
-
-### Production Deployment
-
-1. **Environment Setup:**
-   ```bash
-   # Set production environment
-   export DEBUG=False
-   export SECRET_KEY=your_production_secret_key
-   ```
-
-2. **Database Setup:**
-   ```bash
-   # Use PostgreSQL for production
-   export DATABASE_URL=postgresql://user:pass@localhost/db
-   ```
-
-3. **Frontend Build:**
-   ```bash
-   cd client
-   npm run build
-   ```
-
-4. **Server Configuration:**
-   - Use reverse proxy (nginx)
-   - Enable HTTPS
-   - Configure firewall
-   - Set up monitoring
-
-### Docker Deployment (Optional)
-
-```dockerfile
-# Dockerfile example
-FROM python:3.9
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["uvicorn", "server.main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
+### 🌍 Vision
+To become the leading resource management platform for indigenous communities worldwide, preserving cultural values while embracing modern technology.
 
 ---
 
 ## 🤝 Contributing
 
+We welcome contributions from the community! Please read our contributing guidelines and code of conduct.
+
 ### Development Setup
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new features
+5. Submit a pull request
 
-1. **Fork the repository**
-2. **Create feature branch:** `git checkout -b feature/amazing-feature`
-3. **Make changes** and test thoroughly
-4. **Commit changes:** `git commit -m 'Add amazing feature'`
-5. **Push to branch:** `git push origin feature/amazing-feature`
-6. **Create Pull Request**
+### Cultural Consultation
+For culturally-sensitive features, please consult with Māori advisors and follow tikanga-based development practices.
 
-### Code Standards
+---
 
-- **Python:** Follow PEP 8 guidelines
-- **JavaScript:** Use ESLint configuration
-- **Comments:** Document complex logic
-- **Testing:** Add tests for new features
+## 📞 Support & Community
+
+- **Documentation:** [View full documentation](docs/)
+- **Issues:** [GitHub Issues](https://github.com/yourusername/kaiwhakarite-rawa/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/yourusername/kaiwhakarite-rawa/discussions)
+- **Email:** support@kaiwhakarite.co.nz
 
 ---
 
@@ -305,34 +258,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Te Reo Māori translations** - Cultural consultants
-- **FastAPI** - Modern Python web framework
-- **React** - Frontend framework
-- **Tailwind CSS** - Utility-first CSS framework
-- **Material Icons** - Beautiful iconography
-
----
-
-## 📞 Support
-
-**Technical Support:**
-- 📧 Email: support@kaiwhakarite.co.nz
-- 📖 Documentation: `docs/` folder
-- 🐛 Issues: GitHub Issues tab
-
-**Cultural Support:**
-- 🏛️ Māori language assistance
-- 🎨 Cultural design guidance
-- 📚 Educational resources
+- **Te Tiriti o Waitangi** - Foundation for partnership
+- **Mana whenua** - Local iwi for cultural guidance
+- **Open source community** - For technical inspiration
+- **Māori technology leaders** - For paving the way
 
 ---
 
 <div align="center">
 
-**[⬆ Back to Top](#-kaiwhakarite-rawa)**
+**Kia kaha, kia māia, kia manawanui**  
+*Be strong, be brave, be steadfast*
 
 Made with ❤️ for Māori communities
-
-*Kia kaha, kia māia, kia manawanui*
 
 </div> 
